@@ -240,7 +240,7 @@ body {
   overflow-wrap: anywhere;
 }
 
-.footer a {
+.footer a:any-link {
   color: var(--text-color);
   font-weight: 600;
   text-underline-offset: 0.15em;
