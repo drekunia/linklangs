@@ -21,9 +21,15 @@ author:
     ja: ライター・開発者
     id: Penulis dan pengembang
   bio:
-    en: I write about the web and build small tools.
-    ja: ウェブについて書いたり、小さなツールを作ったりしています。
-    id: Saya menulis tentang web dan membuat alat-alat kecil.
+    en: |
+      I write about the web and build small tools.
+      Feel free to [check out my blog](https://drekunia.github.io/blog).
+    ja: |
+      ウェブについて書いたり、小さなツールを作ったりしています。
+      [ブログでも覗いてみてください](https://drekunia.github.io/blog)。
+    id: |
+      Saya menulis tentang teknologi dan mengerjakan beberapa proyek kecil.
+      Silakan [kunjungi blog saya](https://drekunia.github.io/blog).
   avatar: /assets/img/avatar.webp
 
 links:
@@ -31,12 +37,12 @@ links:
       en: Blog
       ja: ブログ
       id: Blog
-    url: https://example.com/blog
+    url: https://drekunia.github.io/blog
   - name:
       en: Projects
       ja: プロジェクト
       id: Proyek
-    url: https://example.com/projects
+    url: https://github.com/drekunia?tab=repositories
   - name:
       en: Email
       ja: メール
