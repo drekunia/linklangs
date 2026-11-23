@@ -7,8 +7,8 @@ A multilingual personal homepage template for Jekyll. Give your bio and links th
 ## Create your site
 
 1. Click **Use this template → Create a new repository** on GitHub. A public repository works with GitHub Pages on GitHub Free.
-2. Edit `_config.yml` to set your title, profile, and links. Update `_data/languages.yml` for the languages you want to offer. Replace the sample images in `assets/img`.
-3. In your repository, go to **Settings → Pages** and select **GitHub Actions** as the source. Then open **Actions → Build and Deploy → Run workflow**.
+2. Replace the John Doe profile and example links in [`_config.yml`](_config.yml). Choose your languages in [`_data/languages.yml`](_data/languages.yml) and replace the sample avatar, social preview image, and favicons in [`assets/img`](assets/img).
+3. In your new repository, choose **Settings → Pages → Source → GitHub Actions**. Open **Actions → Build and Deploy → Run workflow**, select `main`, and run it. Once it succeeds, open the published URL from **Settings → Pages**.
 
 ## Development
 
@@ -76,21 +76,25 @@ Add or reorder language codes in [_data/languages.yml](_data/languages.yml). The
 | `error_heading` | 404 page heading |
 | `error_message` | 404 page message |
 | `return_home` | Label for the 404 page’s home link |
-| `rights` | Extra notice after the copyright line |
+| `rights` | Notice after the name on the copyright line |
 
-Missing 404 and switcher text falls back to English. An empty `rights` field leaves just the copyright line. The root homepage uses its default language’s rights notice, while a localized homepage or the 404 page uses its own language’s notice.
+Missing 404 and switcher text falls back to English. The root homepage uses the default language’s rights notice. Localized pages and the 404 page use the notice for the active language.
 
 - With no entries, the site uses English. With one entry, it uses that language. Both cases use a single homepage without a dropdown.
 - With at least two valid language codes, Jekyll generates static homepages such as `/en/`, `/ja/`, and `/id/` from the same template. Each has localized metadata, a canonical URL, and reciprocal `hreflang` links. The canonical language URLs appear in the sitemap, and `/` is the `x-default` URL.
 - A direct visit to a language URL stays in that language. On `/` and the 404 page, the site checks the visitor’s saved choice, then their browser preferences, then `default_language`. If the configured default is unavailable, it uses the first listed language.
 - The homepage dropdown navigates to the selected language URL and saves the choice. The 404 dropdown changes the error page in place. The 404 template uses `noindex, follow`.
 
+## Footer
+
+The footer shows the current year and the profile name. Change or clear `rights` for each language in [`_data/languages.yml`](_data/languages.yml) to customize the notice after the name. The linklangs and Jekyll credit appears below the copyright line and can be edited in [`_layouts/default.html`](_layouts/default.html).
+
 ## Deployment
 
-The [Build and Deploy workflow](.github/workflows/pages-deploy.yml) builds the site in production mode with the custom Jekyll plugins and publishes the result to GitHub Pages. It runs on site changes pushed to `main` and can also be triggered manually. GitHub Pages provides the published origin and base path, including when you configure a custom domain through Pages.
+Use GitHub Actions so the [Build and Deploy workflow](.github/workflows/pages-deploy.yml) can run the custom Jekyll plugins that generate the localized pages. The workflow runs on site changes pushed to `main` and can also be triggered manually. If you use another default branch, update the workflow’s push trigger. GitHub Pages supplies the published origin and base path, including when you set a custom domain.
 
 For another host, set `url` to the origin (for example, `https://example.com`) and `baseurl` to the hosting path (for example, `/homepage` or an empty string for the root). Build with `JEKYLL_ENV=production bundle exec jekyll build` and upload the contents of `_site`.
 
 ## License
 
-See [LICENSE](LICENSE).
+Released under the [MIT License](LICENSE).
