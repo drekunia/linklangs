@@ -120,7 +120,7 @@
       <footer class="footer">
         <p>
           &copy; {{ 'now' | date: "%Y" }}
-          <a href="{{ '/' | relative_url }}"
+          <a class="link" href="{{ '/' | relative_url }}"
             ><strong>{{ default_copyright_name | escape }}</strong></a
           >.
           {% for code in language_codes %}
@@ -134,8 +134,8 @@
           {% endfor %}
         </p>
         <p lang="en">
-          Built with <a href="https://github.com/drekunia/linklangs">linklangs</a>
-          for <a href="https://jekyllrb.com/">Jekyll</a>.
+          Built with <a class="link" href="https://github.com/drekunia/linklangs"><strong>linklangs</strong></a>
+          for <a class="link" href="https://jekyllrb.com/"><strong>Jekyll</strong></a>.
         </p>
       </footer>
     </div>
