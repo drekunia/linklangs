@@ -1,0 +1,45 @@
+default_language: en
+
+title: linklangs
+description:
+  en: A multilingual personal homepage built with Jekyll.
+  ja: Jekyllで作った多言語対応の個人サイト。
+  id: Situs pribadi multibahasa yang dibuat dengan Jekyll.
+
+# The Pages workflow supplies the published origin and base path.
+url: ""
+baseurl: ""
+image: /assets/img/og-image.png
+
+markdown: kramdown
+highlighter: rouge
+
+author:
+  name: Alex Morgan
+  title:
+    en: Writer and developer
+    ja: ライター・開発者
+    id: Penulis dan pengembang
+  bio:
+    en: I write about the web and build small tools.
+    ja: ウェブについて書いたり、小さなツールを作ったりしています。
+    id: Saya menulis tentang web dan membuat alat-alat kecil.
+  avatar: /assets/img/avatar.webp
+
+links:
+  - name:
+      en: Blog
+      ja: ブログ
+      id: Blog
+    url: https://example.com/blog
+  - name:
+      en: Projects
+      ja: プロジェクト
+      id: Proyek
+    url: https://example.com/projects
+  - name:
+      en: Email
+      ja: メール
+      id: Email
+    url: mailto:alex@example.com
+    same_tab: true

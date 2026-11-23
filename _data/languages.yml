@@ -1,0 +1,23 @@
+en:
+  name: English
+  locale: en_US
+  switcher: Language
+  error_heading: 404 Not Found
+  error_message: Couldn't find the page you're looking for.
+  return_home: Back to home
+
+ja:
+  name: 日本語
+  locale: ja_JP
+  switcher: 言語
+  error_heading: 404 エラー
+  error_message: ページが見つかりませんでした。
+  return_home: ホームに戻る
+
+id:
+  name: Bahasa Indonesia
+  locale: id_ID
+  switcher: Bahasa
+  error_heading: 404 Halaman tidak ditemukan
+  error_message: Halaman yang Anda cari tidak ditemukan.
+  return_home: Kembali ke beranda
