@@ -20,7 +20,7 @@ id:
   name: Bahasa Indonesia
   locale: id_ID
   switcher: Bahasa
-  error_heading: 404 Halaman tidak ditemukan
+  error_heading: 404 Not Found
   error_message: Halaman yang Anda cari tidak ditemukan.
   return_home: Kembali ke beranda
   rights: Sebagian hak cipta dilindungi.
