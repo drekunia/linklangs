@@ -88,8 +88,20 @@ body {
   margin-bottom: var(--spacing-md);
 }
 
+.homepage-profile .site-title {
+  line-height: 1.1;
+}
+
+.homepage-profile .author-title {
+  line-height: 1.35;
+}
+
+.homepage-profile .site-title + .author-title {
+  margin-top: var(--spacing-xs);
+}
+
 .homepage-profile > :not([hidden]) ~ .bio:not([hidden]) {
-  margin-top: var(--spacing-md);
+  margin-top: var(--spacing-sm);
 }
 
 .bio {
@@ -170,7 +182,7 @@ body {
 }
 
 .homepage-profile > :not([hidden]) ~ .links:has(> :not([hidden])) {
-  margin-top: var(--spacing-lg);
+  margin-top: var(--spacing-md);
 }
 
 .link {
@@ -216,7 +228,7 @@ body {
 }
 
 .avatar:not(:last-child) {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
 /* Selection */
