@@ -37,11 +37,11 @@ Edit [_config.yml](_config.yml) for the site title, description, profile, and li
 default_language: en
 
 title:
-  en: "Alex’s homepage"
-  ja: "アレックスのホームページ"
+  en: "John’s homepage"
+  ja: "ジョンのホームページ"
 
 author:
-  name: Alex Morgan
+  name: John Doe
   title:
     en: Writer and developer
     ja: ライター・開発者

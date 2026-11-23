@@ -15,7 +15,7 @@ markdown: kramdown
 highlighter: rouge
 
 author:
-  name: Alex Morgan
+  name: John Doe
   title:
     en: Writer and developer
     ja: ライター・開発者
@@ -41,5 +41,5 @@ links:
       en: Email
       ja: メール
       id: Email
-    url: mailto:alex@example.com
+    url: mailto:john@example.com
     same_tab: true

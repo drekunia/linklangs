@@ -5,6 +5,7 @@ en:
   error_heading: 404 Not Found
   error_message: Couldn't find the page you're looking for.
   return_home: Back to home
+  rights: Some rights reserved.
 
 ja:
   name: 日本語
@@ -13,6 +14,7 @@ ja:
   error_heading: 404 エラー
   error_message: ページが見つかりませんでした。
   return_home: ホームに戻る
+  rights: 一部の権利を留保します。
 
 id:
   name: Bahasa Indonesia
@@ -21,3 +23,4 @@ id:
   error_heading: 404 Halaman tidak ditemukan
   error_message: Halaman yang Anda cari tidak ditemukan.
   return_home: Kembali ke beranda
+  rights: Sebagian hak cipta dilindungi.
